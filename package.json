@@ -1,0 +1,47 @@
+{
+  "name": "coindpay-forwarder",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "Pay, Buy, Sell, Swap, Earn — with Fiat or Crypto.",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy:base": "HARDHAT_NETWORK=base npx hardhat ignition deploy ignition/modules/forwarder.deploy.ts",
+    "deploy:bsc": "HARDHAT_NETWORK=bscMainnet npx hardhat ignition deploy ignition/modules/forwarder.deploy.ts",
+    "deploy:baseSepolia": "HARDHAT_NETWORK=baseSepolia npx hardhat ignition deploy ignition/modules/forwarder.deploy.ts",
+    "deploy:bscTestnet": "HARDHAT_NETWORK=bscTestnet npx hardhat ignition deploy ignition/modules/forwarder.deploy.ts",
+    "deploy:read:base": "HARDHAT_NETWORK=base npx hardhat run scripts/deploy.ts",
+    "deploy:read:bsc": "HARDHAT_NETWORK=bscMainnet npx hardhat run scripts/deploy.ts",
+    "deploy:read:baseSepolia": "HARDHAT_NETWORK=baseSepolia npx hardhat run scripts/deploy.ts",
+    "deploy:read:bscTestnet": "HARDHAT_NETWORK=bscTestnet npx hardhat run scripts/deploy.ts",
+    "settle:base": "HARDHAT_NETWORK=base npx hardhat run scripts/settle.ts",
+    "settle:bsc": "HARDHAT_NETWORK=bscMainnet npx hardhat run scripts/settle.ts",
+    "settle:baseSepolia": "HARDHAT_NETWORK=baseSepolia npx hardhat run scripts/settle.ts",
+    "settle:bscTestnet": "HARDHAT_NETWORK=bscTestnet npx hardhat run scripts/settle.ts",
+    "lint": "eslint --ext .ts,.js ./",
+    "format": "prettier --write"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.6",
+    "@nomicfoundation/hardhat-ignition-viem": "^3.0.7",
+    "@nomicfoundation/hardhat-keystore": "^3.0.3",
+    "@nomicfoundation/hardhat-network-helpers": "^3.0.3",
+    "@nomicfoundation/hardhat-node-test-runner": "^3.0.8",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.1",
+    "@nomicfoundation/hardhat-verify": "^3.0.8",
+    "@nomicfoundation/hardhat-viem": "^3.0.2",
+    "@nomicfoundation/hardhat-viem-assertions": "^3.0.5",
+    "@types/node": "^25.0.10",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "hardhat": "^3.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "viem": "^2.45.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.4.0"
+  }
+}

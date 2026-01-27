@@ -1,0 +1,34 @@
+[
+  {
+    "network": "baseSepolia",
+    "merchant": "0x3187daa981b3abd1a3745dc7a0ee53262500748b",
+    "token": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "amount": "5000000",
+    "error": "TypeError: wallet.sendContractTransaction is not a function",
+    "status": "failed",
+    "retryable": true,
+    "timestamp": "2026-01-26T18:19:01.098Z"
+  },
+  {
+    "network": "baseSepolia",
+    "merchant": "0x3187daa981b3abd1a3745dc7a0ee53262500748b",
+    "token": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "amount": "5000000",
+    "feeBps": 300,
+    "reserveBps": 500,
+    "txHash": "0x6ab7fc680605db6b8a78decaf6d63f33c7b5ee5f5b03ccebe7a9356f6c97b363",
+    "status": "completed",
+    "timestamp": "2026-01-26T18:21:44.291Z"
+  },
+  {
+    "network": "baseSepolia",
+    "token": "0x0000000000000000000000000000000000000000",
+    "merchant": "0x3187daa981b3abd1a3745dc7a0ee53262500748b",
+    "amount": "10000000000000000",
+    "feeBps": 300,
+    "reserveBps": 500,
+    "txHash": "0x0e71965bd8c14404364b124f58f4c149831f438a0ccc964d9d30dcbf82260207",
+    "status": "completed",
+    "timestamp": "2026-01-27T06:38:44.680Z"
+  }
+]
