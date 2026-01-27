@@ -8,6 +8,7 @@ typechain/
 
 # Build output
 dist/
+ignition/deployments/build-info
 
 # Logs
 npm-debug.log*
