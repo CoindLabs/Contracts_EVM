@@ -5,8 +5,8 @@ import { fileURLToPath } from "url";
 const NETWORK_TO_CHAIN_ID: Record<string, number> = {
   baseSepolia: 84532,
   base: 8453,
-  bscMainnet: 56,
   bscTestnet: 97,
+  bsc: 56,
 };
 
 const CONTRACT_KEY_HINT = "PayForwarder";
@@ -29,7 +29,7 @@ async function main() {
 
   const deploymentPath = path.resolve(
     __dirname,
-    `../ignition/deployments/chain-${chainId}/deployed_addresses.json`,
+    `../ignition/deployments/chain_${NETWORK}/deployed.json`,
   );
 
   if (!fs.existsSync(deploymentPath)) {
@@ -50,7 +50,10 @@ async function main() {
   const contractAddress = deployments[matchedKey];
   console.log(`[Deploy] PayForwarder: ${contractAddress}`);
 
-  const outputPath = path.resolve(__dirname, "../deployed.json");
+  const outputPath = path.resolve(
+    __dirname,
+    `../deployed/chain_${NETWORK}.json`,
+  );
   const output = {
     network: NETWORK,
     chainId,

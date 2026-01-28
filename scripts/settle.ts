@@ -10,7 +10,10 @@ async function main() {
   const NETWORK = process.env.HARDHAT_NETWORK ?? "baseSepolia";
   console.log(`\n[Settle] Network: ${NETWORK}`);
 
-  const deployedPath = path.resolve(__dirname, "../deployed.json");
+  const deployedPath = path.resolve(
+    __dirname,
+    `../deployed/chain_${NETWORK}.json`,
+  );
   if (!fs.existsSync(deployedPath)) {
     throw new Error("deployed.json not found");
   }
@@ -25,7 +28,10 @@ async function main() {
 
   console.log(`[Settle] Executor: ${wallet.account.address}`);
 
-  const merchantsPath = path.resolve(__dirname, "../config/merchants_ETH.json");
+  const merchantsPath = path.resolve(
+    __dirname,
+    `../config/chain_${NETWORK}/merchants.json`,
+  );
   if (!fs.existsSync(merchantsPath)) {
     throw new Error("merchants.json not found");
   }

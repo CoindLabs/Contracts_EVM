@@ -1,0 +1,10 @@
+[
+  {
+    "token": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "merchant": "0x195b9c5145ebaff4328f1916d7142e915cce2a44",
+    "treasury": "0xb2d2c47425b091da69b3493331038f89c8b500e8",
+    "amount": "1000000",
+    "feeBps": 300,
+    "reserveBps": 500
+  }
+]

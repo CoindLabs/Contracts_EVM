@@ -88,7 +88,7 @@ contract PayForwarder is Ownable, ReentrancyGuard {
         );
     }
 
-    // ========== Admin ==========
+    // ========== Master ==========
     function setAllowedCaller(address caller, bool allowed) external onlyOwner {
         allowedCallers[caller] = allowed;
         emit AllowedCallerUpdated(caller, allowed);

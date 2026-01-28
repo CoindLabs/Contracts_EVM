@@ -34,7 +34,7 @@ export default defineConfig({
       url: configVariable("BSC_TESTNET_RPC"),
       accounts: [configVariable("DEPLOYER_PRIVATE_KEY")],
     },
-    bscMainnet: {
+    bsc: {
       type: "http",
       chainType: "l1",
       url: configVariable("BSC_MAINNET_RPC"),
