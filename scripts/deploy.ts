@@ -29,7 +29,7 @@ async function main() {
 
   const deploymentPath = path.resolve(
     __dirname,
-    `../ignition/deployments/chain_${NETWORK}/deployed.json`,
+    `../ignition/deployments/chain-${chainId}/deployed_addresses.json`,
   );
 
   if (!fs.existsSync(deploymentPath)) {
