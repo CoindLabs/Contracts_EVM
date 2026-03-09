@@ -114,5 +114,16 @@
     "txHash": "0x303d2aef2220c179d50a3fedecee55686bdd58b2e7ad54cc0d0e35017a4d9671",
     "status": "completed",
     "timestamp": "2026-01-28T12:39:37.358Z"
+  },
+  {
+    "network": "base",
+    "token": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "merchant": "0x49f2934291423b37577253e09aa8cf1770badb0e",
+    "amount": "38810000",
+    "feeBps": 300,
+    "reserveBps": 500,
+    "txHash": "0x8e85531a0ba47da620a28d1eb5f4c9e05dd288b5be72712c0d32d534bfbf5ff6",
+    "status": "completed",
+    "timestamp": "2026-02-26T10:55:14.433Z"
   }
 ]
