@@ -6,9 +6,15 @@ artifacts/
 cache/
 typechain/
 
+# scripts
+scripts/usdc_recover.ts
+scripts/settle.ts
+
 # Build output
+logs/
 dist/
 ignition/deployments/build-info
+
 
 # Logs
 npm-debug.log*

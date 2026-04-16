@@ -38,7 +38,7 @@ async function main() {
 
   const merchants = JSON.parse(fs.readFileSync(merchantsPath, "utf8"));
 
-  const logPath = path.resolve(__dirname, "../config/settle.log.json");
+  const logPath = path.resolve(__dirname, "../logs/settle.log.json");
   const logs = fs.existsSync(logPath)
     ? JSON.parse(fs.readFileSync(logPath, "utf8"))
     : [];
